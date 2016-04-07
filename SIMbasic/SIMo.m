@@ -112,7 +112,7 @@ OTFo = OTFdoubling(OTFo,DoubleMatSize);
 
 % Plotting SIM results
 SIMplot(Fsum,Fperi,Fcent,OTFo,kA,kB,kC,S1aTnoisy);
-break
+%break
 
 %% recontructed SIM images
 Dcent = real( ifft2(fftshift(Fcent)) );
@@ -152,7 +152,7 @@ title('appodized SIM image')
 figure;
 imshow(DperiA(h+1:t-h,h+1:t-h),[])
 title('appodized SIM image (using only off-center frequency components)')
-break
+%break
 %% for writing the image files into *.tiff files
 %{
 h = 1*30;
